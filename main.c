@@ -4,7 +4,7 @@
 
 int main(void) {
 
-  char num[];
+  char num[] = "III";
 
   scanf ("Digite o número a ser transformado: %s", num); 
 
