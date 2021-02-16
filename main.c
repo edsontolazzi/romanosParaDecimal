@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(void) {
 
-  char num[] = "D";
+  char num[];
+
+  scanf ("Digite o número a ser transformado: %s", num); 
 
   char um = 'I';
   char cinco = 'V';
@@ -26,12 +29,8 @@ int main(void) {
   int x[10];
   int res;
 
-  while (nulo != NULL) {
-    nulo = num[i];
-    i++;
-  }
-  i--;
-  
+  i = strlen(num);
+
   for (int j; j < i; j++) {
     if (num[j] == um) {
       x[j] = um1;
@@ -68,7 +67,6 @@ int main(void) {
     if(x[i] == x[i-1]) {
       res = res + x[i-1];
     }
-
     i--;
   }
 
@@ -76,5 +74,4 @@ int main(void) {
   printf("%d\n", res);
   
   return 0;
-
 }
