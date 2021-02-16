@@ -6,7 +6,8 @@ int main(void) {
 
   char num[] = "III";
 
-  scanf ("Digite o número a ser transformado: %s", num); 
+  printf("Digite um número romano: ");
+  scanf ("%s", num); 
 
   char um = 'I';
   char cinco = 'V';
@@ -70,8 +71,7 @@ int main(void) {
     i--;
   }
 
-  printf("%d\n", i);
-  printf("%d\n", res);
+  printf("Número em decimal: %d\n", res);
   
   return 0;
 }
